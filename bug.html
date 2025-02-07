@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // This line will cause an error in some browsers
+    document.getElementById("myDiv").style.display = "none";
+    // Attempting to modify a non-existent element's style can cause unexpected behavior
+    document.getElementById("nonExistentDiv").style.display="block";
+  </script>
+</body>
+</html>
