@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+    // Check if the element exists before modifying its style
+    const myDiv = document.getElementById("myDiv");
+    if (myDiv) {
+      myDiv.style.display = "none";
+    }
+
+    //Similarly check for nonExistentDiv
+    const nonExistentDiv = document.getElementById("nonExistentDiv");
+    if(nonExistentDiv){
+        nonExistentDiv.style.display="block";
+    } else{
+        console.log("Element does not exist");
+    }
+  </script>
+</body>
+</html>
