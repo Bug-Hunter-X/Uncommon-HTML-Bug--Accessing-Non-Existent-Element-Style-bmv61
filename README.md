@@ -1,0 +1,1 @@
+This repository demonstrates an uncommon HTML bug involving accessing the style property of a non-existent element. The bug.html file contains the problematic code. The bugSolution.html file shows how to avoid the error by first checking if the element exists.
